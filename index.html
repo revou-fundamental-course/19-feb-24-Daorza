@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Universe Of Design</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="50" viewBox="0 0 50 50">
+                <path d="M25.5,6c-4.159,0-8.111,1.294-11.459,3.732l-6.56-3.608C7.079,5.901,6.572,5.985,6.26,6.328	C5.948,6.671,5.913,7.183,6.175,7.564l4.059,5.932c-0.117,0.066-0.222,0.154-0.308,0.268C7.357,17.167,6,21.226,6,25.5	C6,36.252,14.748,45,25.5,45S45,36.252,45,25.5S36.252,6,25.5,6z M22.051,16.419c2.276,1.252,3.954,3.322,4.714,5.776	c-1.276,0.415-2.273,1.457-2.627,2.761c-2.469-0.251-4.718-1.575-6.136-3.647L10.195,9.898L22.051,16.419z M27.92,24.008	l2.706,3.788c-0.325,0.24-0.612,0.526-0.851,0.852l-3.798-2.532C25.981,26.076,26,26.041,26,26	C26,24.925,26.855,24.051,27.92,24.008z M29.376,32.737c0.264,0.566,0.657,1.071,1.178,1.463c0.836,0.629,1.326,1.477,1.411,2.354	C30.995,37.213,28.751,38,26,38c-4.738,0-9.509-2.412-11.721-7.061C16.735,32.859,20.219,34,23.5,34	C25.602,34,27.606,33.561,29.376,32.737z M33.735,35.249c-0.348-1.011-1.028-1.932-1.979-2.646c-0.621-0.468-0.89-1.269-0.7-2.091	c0.182-0.788,0.91-1.42,1.734-1.501c0.066-0.007,0.131-0.01,0.193-0.01c1.222,0,1.786,1.203,2.046,2.241	C35.498,33.116,34.584,34.455,33.735,35.249z M25.5,43C15.851,43,8,35.149,8,25.5c0-3.753,1.173-7.316,3.381-10.327l4.971,7.265	c1.673,2.446,4.286,4.039,7.175,4.449l5.502,3.668c-0.004,0.036-0.014,0.073-0.017,0.109C27.406,31.515,25.481,32,23.5,32	C18.005,32,13,28.663,13,25c0-0.553-0.447-1-1-1s-1,0.447-1,1c0,9.848,7.546,15,15,15c3.026,0,6.131-0.9,7.541-2.156	c1.644-0.863,4.357-3.376,3.429-7.086c-0.636-2.548-2.264-3.938-4.376-3.737c-0.02,0.002-0.038,0.008-0.057,0.01l-3.584-5.017	c-0.064-0.089-0.146-0.154-0.23-0.215c-0.883-3.03-2.915-5.596-5.708-7.132l-7.014-3.858C18.829,8.972,22.087,8,25.5,8	C35.149,8,43,15.851,43,25.5S35.149,43,25.5,43z"></path>
+            </svg>
+        </div>
+        <div class="nav-menu" id="home">
+            <div><a href="#home">Home</a></div>
+            <div><a href="#profile"> Our Profile</a></div>
+            <div><a href="#portofoilio"> Portofolio</a></div>
+            <div><a href="#message">Message Us</a> </div>
+        </div>
+    </nav>
+    <div class="body">
+        <div class="hi">Hi, Welcome To Universe Of Design!</div>
+    </div>
+
+    <section id="message" class="message">
+        <div class="bold">
+            Message Us
+        </div>
+        <br>
+        <div class="grid-2">
+            <form id="myForm">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama">
+                    <label>Tanggal Lahir:</label>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+                    <label>Jenis Kelamin:</label>
+                    <div>
+                        <input type="radio" id="pria" name="jenis_kelamin" value="pria">
+                            <label for="pria">Pria</label>
+                        <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
+                            <label for="wanita">Wanita</label>
+                    </div>
+                    <label for="deskripsi">Deskripsi:</label>
+                    <textarea id="deskripsi" name="deskripsi"></textarea>
+                <button type="submit" class="span" class="submit">Submit</button>
+            </form>
+            <div>
+                <p>Current Time:<div id="waktu"></div>
+                </p>
+                <br>
+                <p id="hasilNama"></p>
+                <p id="hasilTanggalLahir"></p>
+                <p id="hasilJenisKelamin"></p>
+                <p id="hasilDeskripsi"></p>
+                <div>Nama: </div>
+                <div>Tanggal lahir:</div>
+                <div>Tangan:</div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Daorza
+    </footer>
+</body>
+</html>
