@@ -2,18 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: Arial, sans-serif;
 }
 
 nav {
     position: fixed;
-    background-color: lightgray;
+    background-color: #f8f9fa;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    color: #252525;
+    color: #333;
     padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-menu {
@@ -22,54 +23,92 @@ nav {
 
 .nav-menu > div {
     padding: 0.5rem;
-    decoration: none;
-}
-.nav-menu > div > a{
     text-decoration: none;
-    color: #252525;
+}
 
+.nav-menu > div > a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu > div > a:hover {
+    color: #007bff;
 }
 
 .body {
     padding: 8rem 5rem;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
 }
 
 .hi {
-    font-size: x-large;
-    font-weight: medium;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 footer {
     text-align: right;
     padding: 2rem;
-    border-top: 1px solid #252525;
+    border-top: 1px solid #ccc;
 }
 
-.message {
-    border: 1px solid #000;
+.section {
+    border: 1px solid #ccc;
     padding: 5rem;
+    margin-top: 3rem;
 }
 
 .bold {
     font-weight: bold;
-    font-size: x-large;
+    font-size: 1.5rem;
 }
 
 .grid-2 {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 form {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 40px
+    gap: 40px;
 }
 
 .submit {
     width: 100%;
-    grid-column: span 2;
     padding: 1rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+}
+
+.gallery {
+    display: flex;
+    gap: 2rem;
+}
+
+.gallery div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery div svg {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.gallery div .bold {
+    font-size: 1.2rem;
+    text-align: center;
 }

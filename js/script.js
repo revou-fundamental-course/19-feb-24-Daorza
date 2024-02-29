@@ -12,7 +12,10 @@ function tampilkanWaktu() {
 window.addEventListener('load', tampilkanWaktu);
 
 const form = document.getElementById('myForm');
-const hasilDiv = document.getElementById('hasil');
+const hasilNama = document.getElementById('hasilNama');
+const hasilTanggalLahir = document.getElementById('hasilTanggalLahir');
+const hasilJenisKelamin = document.getElementById('hasilJenisKelamin');
+const hasilDeskripsi = document.getElementById('hasilDeskripsi');
 
 form.addEventListener('submit', function(event) {
     event.preventDefault(); 
@@ -21,10 +24,9 @@ form.addEventListener('submit', function(event) {
     const jenisKelamin = form.elements.jenis_kelamin.value;
     const deskripsi = form.elements.deskripsi.value;
 
-    hasilDiv.innerHTML = `
-        <p><strong>Nama:</strong> ${nama}</p>
-        <p><strong>Tanggal Lahir:</strong> ${tanggalLahir}</p>
-        <p><strong>Jenis Kelamin:</strong> ${jenisKelamin}</p>
-        <p><strong>Deskripsi:</strong> ${deskripsi}</p>
-    `;
+    hasilNama.textContent = `Nama: ${nama}`;
+    hasilTanggalLahir.textContent = `Tanggal Lahir: ${tanggalLahir}`;
+    hasilJenisKelamin.textContent = `Jenis Kelamin: ${jenisKelamin}`;
+    hasilDeskripsi.textContent = `Deskripsi: ${deskripsi}`;
 });
+
